@@ -29,6 +29,11 @@ public class csvtopreetytable {
                 System.out.printf("| %-" + (columnWidths[i] + 2) + "s", lines.get(0)[i]);
             }
             System.out.println();
+            for (int i = 0; i < lines.get(0).length; i++) {
+            	String repeatedString = new String(new char[columnWidths[i]+2]).replace("\0","=");
+                System.out.printf("|=%-" + (columnWidths[i] + 2) + "s",repeatedString );
+            }
+            System.out.println();
 
             // Print the table data
             for (int i = 1; i < lines.size(); i++) {

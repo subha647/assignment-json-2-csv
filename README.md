@@ -3,6 +3,18 @@
 #### How to run the project ?
 main method is present in the /json2csv/src/main/java/assignment/json2csv/App.java
 
+Run in Ubuntu machine
+
+```sh
+sudo apt install maven
+mvn package install
+cd assignment-json-2-csv // change directory to project directory
+mvn clean install
+mvn validate
+mvn compile
+java -cp target/json2csv-0.0.1-SNAPSHOT.jar assignment.json2csv.App
+```
+
 ### File structure
 - csvtopreetytable.java   	: This files contains the functionality to print table from the given csv file.
 - currenttimestamp.java   	: This file contains show_currenttimestamp function which show current timestamp in desired format.
