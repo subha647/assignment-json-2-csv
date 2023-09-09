@@ -45,7 +45,7 @@ public class jsontocsvconverter {
             String[] unique_keys = getCsvHeader(jsonArray);
             System.out.println(String.join("\t", unique_keys));
             csvWriter.writeNext(unique_keys);
-            System.out.printf("%-10s", unique_keys[0]);
+        	// System.out.printf("%-10s", unique_keys[0]);
             
             // Convert JSON to CSV
             for (int i = 0; i < jsonArray.length(); i++) {
